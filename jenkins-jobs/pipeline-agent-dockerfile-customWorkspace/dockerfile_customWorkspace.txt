@@ -15,7 +15,8 @@ pipeline {
         stage('dockerfile'){            
             agent {
                 dockerfile {
-                    customWorkspace '/var/lib/jenkins/workspace/pipeline-agent-dockerfile-customWorkspace/checkout-directory'
+                    //customWorkspace '/var/lib/jenkins/workspace/pipeline-agent-dockerfile-customWorkspace/checkout-directory'
+					customWorkspace '/var/lib/jenkins/workspace/pipelinesharedlib/checkout-directory'
                 } 
             }            
             steps{
